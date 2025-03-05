@@ -1,0 +1,39 @@
+.anchor__button {
+  height: 4rem;
+  width: 15.1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  background-color: transparent;
+  transition: opacity 200ms linear;
+
+  &--underline {
+    padding-bottom: .7rem;
+    border-bottom: 1px solid #fff;
+  }
+
+  &--left,
+  &--start {
+    text-align: start;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right,
+  &--end {
+    text-align: end;
+  }
+
+
+  &:active {
+    opacity: .75;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .anchor__button {
+    height: 3.5rem;
+    width: 13.4rem;
+  }
+}

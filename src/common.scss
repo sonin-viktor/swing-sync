@@ -1,0 +1,203 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 11.8rem;
+  line-height: 14.2rem;
+}
+
+h2 {
+  font-size: 8.8rem;
+  line-height: 11.4rem;
+}
+
+h3 {
+  font-size: 6.6rem;
+  line-height: 8.6rem;
+}
+
+h4 {
+  font-size: 5rem;
+  line-height: 7rem;
+}
+
+h5 {
+  font-size: 3.7rem;
+  line-height: 5.2rem;
+}
+
+h6 {
+  font-size: 2.8rem;
+  line-height: 4.2rem;
+}
+
+p,
+a,
+input,
+button {
+  font-weight: 400;
+  font-size: 2.1rem;
+  line-height: 3.2rem;
+}
+
+.wrapper-first,
+.wrapper-second,
+.wrapper-third {
+  position: relative;
+  max-width: 1720px;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+.wrapper-second {
+  max-width: 1592px;
+}
+
+.wrapper-third {
+  max-width: 1336px;
+}
+
+.logo {
+  align-content: end;
+  height: 5.2rem;
+  width: 17.4rem;
+  padding-top: 1.25rem;
+}
+
+.text--red {
+  color: var(--primary-color);
+}
+
+.raichu-player-center-controls-module__controlBtn___fhtdD {
+  background-color: var(--primary-color);
+}
+
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 10.1rem;
+    line-height: 12.1rem;
+  }
+
+  h2 {
+    font-size: 7.6rem;
+    line-height: 9.9rem;
+  }
+
+  h3 {
+    font-size: 5.7rem;
+    line-height: 7.4rem;
+  }
+
+  h4 {
+    font-size: 4.3rem;
+    line-height: 6rem;
+  }
+
+  h5 {
+    font-size: 3.2rem;
+    line-height: 4.5rem;
+  }
+
+  h6 {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+
+  p,
+  a,
+  input,
+  button {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+
+  .wrapper-first,
+  .wrapper-second {
+    max-width: 1120px;
+  }
+
+  .wrapper-third {
+    max-width: 992px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 6.9rem;
+    line-height: 8.3rem;
+  }
+
+  h2 {
+    font-size: 5.5rem;
+    line-height: 7.1rem;
+  }
+
+  h3 {
+    font-size: 4.4rem;
+    line-height: 5.7rem;
+  }
+
+  h4 {
+    font-size: 3.5rem;
+    line-height: 4.9rem;
+  }
+
+  h5 {
+    font-size: 2.8rem;
+    line-height: 3.9rem;
+  }
+
+  h6 {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+
+  .wrapper-first,
+  .wrapper-second,
+  .wrapper-third {
+    max-width: 520px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 5.9rem;
+    line-height: 7.3rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+    line-height: 6.6rem;
+  }
+
+  h3 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+
+  h4 {
+    font-size: 2.5rem;
+    line-height: 3.9rem;
+  }
+
+  h5 {
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+  }
+
+  p,
+  a,
+  input,
+  button {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}

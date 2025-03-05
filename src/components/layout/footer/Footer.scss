@@ -1,0 +1,44 @@
+.footer {
+  padding-block: 3.2rem;
+  background-color: var(--secondary-background-color);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 3.2rem
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    &__wrapper {
+      flex-wrap: wrap;
+      gap: 9.6rem 17rem;
+    }
+
+    &__contacts {
+      gap: 3.2rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    &__wrapper {
+      gap: 8rem 1rem;
+    }
+
+    &__contacts {
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+  }
+}

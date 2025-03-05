@@ -1,0 +1,40 @@
+.foundation {
+  padding-block: var(--section-offset);
+  background-color: var(--secondary-background-color);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+    text-align: center;
+  }
+
+  &__subtitle {
+    opacity: .75;
+  }
+
+  &__subtitle--offset-big {
+    margin-bottom: 6.4rem;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .foundation {
+    &__title {
+      text-align: center;
+    }
+
+    &__subtitle--offset-big {
+      margin-bottom: 4.8rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .foundation__subtitle--offset-big {
+    margin-bottom: 4rem;
+  }
+}

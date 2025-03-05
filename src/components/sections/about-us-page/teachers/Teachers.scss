@@ -1,0 +1,49 @@
+.teachers {
+  padding-block: var(--section-offset);
+
+  &__title {
+    text-align: center;
+    margin-bottom: 9.6rem;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8rem;
+    padding-top: 5.2rem;
+  }
+}
+
+@media screen and (max-width: 1510px) {
+  .teachers {
+    &__items {
+      flex-direction: column;
+      justify-content: center;
+      gap: 10.4rem 0;
+      max-height: 120rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__title {
+      margin-bottom: 8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .teachers__items {
+    gap: 11.2rem 0;
+    max-width: 94.4rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .teachers__items {
+    align-items: center;
+    gap: 8rem;
+    max-height: unset;
+  }
+}

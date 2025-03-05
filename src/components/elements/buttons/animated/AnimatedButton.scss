@@ -1,0 +1,28 @@
+.anim-button {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+
+  &__label-text,
+  &__hover-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+  }
+
+  &__hover-text {
+    top: 100%;
+  }
+
+  &:hover {
+    .anim-button {
+
+      &__label-text,
+      &__hover-text {
+        transform: translateY(-100%);
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.header {
+  padding-block: 3.2rem;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin: 0;
+    padding: 0;
+  }
+
+  &--dark {
+    background-color: var(--background-color);
+  }
+
+  &--red {
+    background-color: var(--secondary-background-color);
+  }
+}

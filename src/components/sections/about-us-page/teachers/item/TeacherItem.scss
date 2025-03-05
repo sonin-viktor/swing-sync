@@ -1,0 +1,57 @@
+.teacher {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    max-width: 30.4rem;
+  }
+
+  &__desc {
+    margin-bottom: 1.6rem;
+    opacity: .75;
+  }
+
+  &__anchor {
+    margin-left: auto;
+  }
+
+
+  &__item:nth-child(2n) {
+    margin-top: 5.2rem;
+  }
+}
+
+@media screen and (max-width: 1510px) {
+  .teacher {
+    &__desc {
+      margin-bottom: 1.6rem;
+      opacity: .75;
+    }
+
+    &__anchor {
+      margin-left: auto;
+    }
+
+    &__item:nth-child(2n) {
+      margin-top: 0;
+    }
+
+    &__item:nth-child(2n) {
+      margin-left: auto;
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .teacher {
+    &__desc {
+      margin-bottom: 1.6rem;
+      opacity: .75;
+    }
+
+    &__item:nth-child(2n) {
+      margin-left: 0;
+    }
+  }
+}

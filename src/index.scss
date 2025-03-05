@@ -1,0 +1,207 @@
+:root,
+body {
+  --background-color: #120d0e;
+  --secondary-background-color: #a20011;
+
+  --text-color: #fff;
+  --primary-color: #ee0d24;
+  --secondary-color: #a20011;
+  --error-color: #ff001a;
+
+  --active-color: #ff001a;
+  --section-offset: 23.2rem;
+
+  @media screen and (max-width: 1200px) {
+    --section-offset: 16rem;
+  }
+
+  @media screen and (max-width: 700px) {
+    --section-offset: 9.6rem;
+  }
+}
+
+:root {
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  line-height: 1;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*Обнуление*/
+#root,
+html,
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: 10px;
+  line-height: normal;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  background: var(--background-color);
+  color: var(--text-color);
+
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
+  overscroll-behavior-y: contain;
+
+  @media screen and (max-width: 360px) {
+    font-size: calc(2.25vw)
+  }
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+article,
+section,
+figure,
+main,
+nav,
+footer,
+header,
+aside {
+  display: block
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1.4rem
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none
+}
+
+b,
+strong {
+  font-weight: bold;
+  font-weight: 600
+}
+
+small {
+  font-size: 80%
+}
+
+hr {
+  height: 1px;
+  margin: .5rem 0 1rem;
+}
+
+pre {
+  overflow: auto
+}
+
+mark {
+  background: #ff0;
+  color: #000
+}
+
+a,
+button,
+input,
+textarea {
+  font-family: inherit;
+  background: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: none;
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  display: block;
+  -webkit-appearance: button;
+  appearance: button;
+  cursor: pointer
+}
+
+input[type=checkbox] {
+  position: absolute;
+  display: none !important
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  appearance: textfield
+}
+
+input[type=search]::-webkit-search-cancel-button {
+  cursor: pointer
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none
+}
+
+
+a {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+[contenteditable] {
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+img {
+  vertical-align: middle;
+  text-indent: -9999px;
+}
+
+svg {
+  fill: currentColor;
+  pointer-events: none;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*Обнуление*/

@@ -1,0 +1,32 @@
+.advantages {
+  padding-block: var(--section-offset);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+  }
+
+  &__title {
+    text-align: right;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .advantages__items {
+    gap: 10.9rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .advantages__items {
+    gap: 4.8rem;
+  }
+}

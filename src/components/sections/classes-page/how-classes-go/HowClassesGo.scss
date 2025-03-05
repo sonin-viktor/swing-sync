@@ -1,0 +1,34 @@
+.classes-go {
+  padding-block: var(--section-offset);
+  background-color: var(--secondary-background-color);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 3.2rem;
+    text-align: center;
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin-bottom: 9.6rem;
+    opacity: .75;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .classes-go__subtitle {
+    margin-bottom: 8rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .classes-go__subtitle {
+    margin-bottom: 7.2rem;
+  }
+}

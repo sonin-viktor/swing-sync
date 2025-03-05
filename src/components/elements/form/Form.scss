@@ -1,0 +1,72 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 49.6rem;
+
+  :-webkit-autofill,
+  :-webkit-autofill:hover,
+  :-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 30px var(--background-color) inset !important;
+    -webkit-text-fill-color: var(--text-color) !important;
+  }
+
+  &--success {
+    pointer-events: none;
+  }
+
+  &__label-text,
+  &__success-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+  }
+
+  &__success-text {
+    top: 100%;
+  }
+
+  &__button {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+    height: 4rem;
+    width: 15.1rem;
+    margin: 1.6rem auto 0;
+    padding-bottom: 0.8rem;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--primary-color);
+
+    &:active {
+      color: var(--active-color);
+      border-bottom: 1px solid var(--active-color);
+    }
+
+    &--success {
+      color: #ff9da7;
+      border-bottom: 1px solid #ff9da7;
+
+      .form__label-text,
+      .form__success-text {
+        transform: translateY(-100%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .form {
+    width: 100%;
+
+    &__button {
+      max-width: 13.4rem;
+      margin-top: 1rem;
+      padding: 0;
+    }
+  }
+}

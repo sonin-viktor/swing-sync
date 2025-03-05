@@ -1,0 +1,49 @@
+.video-section {
+  padding-block: var(--section-offset);
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__video {
+    height: 45.2rem;
+    width: 80rem;
+    background-color: #fff;
+    aspect-ratio: 16/9;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .video-section {
+    &__wrapper {
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+
+    &__video {
+      width: 100%;
+      margin-bottom: 4.8rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .video-section__video {
+    max-height: 28rem;
+    margin-bottom: 4rem;
+  }
+}

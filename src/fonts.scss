@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/assets/fonts/SourceSansPro-Light.eot');
+  src: local('/assets/fonts/Source Sans Pro Light'), local('SourceSansPro-Light'),
+    url('/assets/fonts/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/SourceSansPro-Light.woff') format('woff'),
+    url('/assets/fonts/SourceSansPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/assets/fonts/SourceSansPro-Regular.eot');
+  src: local('/assets/fonts/Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+    url('/assets/fonts/') format('embedded-opentype'),
+    url('/assets/fonts/SourceSansPro-Regular.woff') format('woff'),
+    url('/assets/fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// const l = (o, r) => {
+//   document.querySelector(o).addEventListener("click", n => {
+//       n.preventDefault();
+//       const t = n.target
+//         , e = t.getAttribute("href");
+//       e && (t.classList.contains("nav__link") || t.classList.contains("additional__link") || t.classList.contains("burger-menu__link") || t.classList.contains("burger-menu__additional-link") || t.classList.contains("hero__link")) && (r && setTimeout( () => {
+//           r()
+//       }
+//       , 100),
+//       document.querySelector(e).scrollIntoView({
+//           behavior: "smooth",
+//           block: "center"
+//       }))
+//   }
+//   )
+// }

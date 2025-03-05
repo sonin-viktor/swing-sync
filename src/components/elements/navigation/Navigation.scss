@@ -1,0 +1,31 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  &__link {
+    display: inline-flex;
+    font-weight: 600;
+    padding: .8rem 0 .7rem;
+    border-bottom: 1px solid transparent;
+    transition: opacity 200ms linear;
+
+    &--active {
+      border-bottom: 1px solid #fff;
+      pointer-events: none;
+    }
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .nav__list {
+    gap: 1.6rem;
+  }
+}
